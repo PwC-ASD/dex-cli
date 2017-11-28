@@ -1,0 +1,25 @@
+package: github.com/PwC-ASD/dex-cli
+import:
+- package: github.com/coreos/dex
+  repo: https://github.com/PwC-ASD/dex.git
+  subpackages:
+  - api
+- package: github.com/spf13/cobra
+  version: ca57f0f5dba473a8a58765d16d7e811fb8027add
+- package: github.com/spf13/pflag
+  version: e57e3eeb33f795204c1ca35f56c44f83227c6e66
+- package: google.golang.org/grpc
+  version: v1.8.0
+- package: k8s.io/api
+  subpackages:
+  - core/v1
+- package: k8s.io/apimachinery
+  subpackages:
+  - pkg/api/errors
+  - pkg/apis/meta/v1
+- package: k8s.io/client-go
+  version: v5.0.1
+  subpackages:
+  - kubernetes
+  - rest
+  - tools/clientcmd
